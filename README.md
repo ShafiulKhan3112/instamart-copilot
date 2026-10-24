@@ -1,7 +1,7 @@
-Overview
+# Overview
 Instamart Customer Intelligence & Support Copilot Capstone Project.
 
-Reproduce
+# Reproduce
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
@@ -18,7 +18,7 @@ python src\part_c\triage.py
 python src\part_d\rag.py
 python src\part_d\agent.py
 
-Part A
+# Part A
 Audit Results
 Orders Raw: 13084
 Exact Duplicates: 119
@@ -37,7 +37,7 @@ Cancelled: 1199
 Revenue: INR 2,998,668.80
 Validation
 ALL CHECKPOINTS PASSED
-Part B
+# Part B
 RFM
 Customers: 1175
 Recency Median: 19
@@ -62,7 +62,7 @@ Lapse Prediction
 Test F1 Score: 0.633
 Best C: 10
 Retention List Rows: 10
-Part C
+# Part C
 Redaction Audit
 Emails: 55
 Phones: 91
@@ -80,7 +80,7 @@ Generated:
 
 triage_results.csv
 triage_budget_demo.csv
-Part D
+# Part D
 Policy Retrieval
 Policies Loaded: 5
 Agent
@@ -91,7 +91,7 @@ Generated:
 
 agent_runs.jsonl
 refund_ledger.jsonl
-Limitations and Next Steps
+# Limitations and Next Steps
 Improve predictive model performance
 Add richer ticket classification
 Implement full retrieval ranking
