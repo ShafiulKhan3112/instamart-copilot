@@ -1,5 +1,5 @@
 Overview
-Instamart Customer Intelligence & Support Copilot — Capstone Project
+Instamart Customer Intelligence & Support Copilot Capstone Project.
 
 Reproduce
 python -m venv venv
@@ -13,6 +13,10 @@ python src\part_a\run_sql.py
 python src\part_b\rfm.py
 python src\part_b\segmentation.py
 python src\part_b\lapse_prediction.py
+python src\part_b\train_model.py
+python src\part_c\triage.py
+python src\part_d\rag.py
+python src\part_d\agent.py
 
 Part A
 Audit Results
@@ -33,7 +37,6 @@ Cancelled: 1199
 Revenue: INR 2,998,668.80
 Validation
 ALL CHECKPOINTS PASSED
-
 Part B
 RFM
 Customers: 1175
@@ -44,7 +47,10 @@ Frequency Mean: 9.46
 Frequency Max: 33
 Monetary Mean: INR 2552.06
 Monetary Max: INR 14766.55
-SegmentsSize:
+Segmentation
+
+Segment sizes:
+
 436
 138
 419
@@ -52,15 +58,42 @@ SegmentsSize:
 PCA
 PC1: 0.63427875
 PC2: 0.21803762
-
+Lapse Prediction
+Test F1 Score: 0.633
+Best C: 10
+Retention List Rows: 10
 Part C
-Work in progress
+Redaction Audit
+Emails: 55
+Phones: 91
+Orders: 132
+Total Redactions: 278
+Ticket Classification
+Other: 124
+Delivery: 13
+Payment: 10
+Refund: 9
+Skipped Empty: 4
+Flagged Long: 4
 
+Generated:
+
+triage_results.csv
+triage_budget_demo.csv
 Part D
-Work in progress
+Policy Retrieval
+Policies Loaded: 5
+Agent
+Agent Runs: 7
+Refund Entries: 0
 
+Generated:
+
+agent_runs.jsonl
+refund_ledger.jsonl
 Limitations and Next Steps
-Complete lapse prediction model
-Build ticket triage system
-Build RAG assistant
-Build refund agent
+Improve predictive model performance
+Add richer ticket classification
+Implement full retrieval ranking
+Enhance refund decision workflow
+Add automated testing
